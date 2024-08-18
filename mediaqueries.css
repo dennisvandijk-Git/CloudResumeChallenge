@@ -1,16 +1,6 @@
 /* MEDIA QUERY FOR RESPONSIVENESS */
 
 @media (max-width: 768px) {
-  body {
-    /* height: auto; */
-    /* width: fit-content; */
-    /* display: block; */
-    /* block-size: auto; */
-    /* float: none; */
-    /* overflow-x: hidden; */
-    /* min-width: 100%; */
-  }
-
   header {
     /* height: 10em; */
     padding: 0;
@@ -24,25 +14,11 @@
     font-size: 1rem;
   }
 
-  .resume-container {
-    /* margin-bottom: 10px; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* width: 90%; */
-    /* padding: 10px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-  }
-
   .container {
     align-items: center;
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
     flex-direction: column;
     text-align: left;
     margin: 0;
-    /* margin: 10px; */
-    /* margin-bottom: 10px; */
   }
 
   .container .cloudresumechallenge h2 {
@@ -54,16 +30,9 @@
   .main-container {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 10px; */
-    /* text-align: center; */
   }
 
   .left-wrapper {
-    /* background-color: aqua; */
-    /* display: flex; */
-    /* flex-basis: 100%; */
-    /* align-items: center; */
-    /* justify-content: center; */
     border-right: none;
     text-align: left;
     margin-bottom: 0.8em;
@@ -82,16 +51,10 @@
 
   .right-wrapper .experience {
     text-align: left;
-    /* margin-left: 15%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
   }
 
-  .experience h2 {
-    /* text-align: center; */
-  }
+  /* .experience h2 {
+  } */
 
   .foto {
     margin-bottom: 20px;
