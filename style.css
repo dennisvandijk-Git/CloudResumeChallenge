@@ -1,0 +1,271 @@
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+main {
+  /* height: 100%; */
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #ececec;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* height: 100vh; */
+  /* height: calc(100vh - 20px); */
+  /* height: 100%; */
+  /* overflow-x: hidden; */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* height: 100dvh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p,
+ul {
+  color: rgb(85, 85, 85);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+a:hover {
+  color: rgb(121, 19, 161);
+}
+
+/* TRANSITION */
+
+a,
+.btn,
+.foto img {
+  transition: all 300ms ease;
+}
+
+/* RESUME CONTAINER */
+
+.resume-container {
+  max-width: 800px;
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* margin: 0px; */
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  /* height: 30%; */
+  background-color: #799acc;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+header h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  display: flex;
+  letter-spacing: 0.6rem;
+  color: white;
+  font-size: 3.2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  font-weight: 100;
+  display: flex;
+  color: white;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+}
+
+/* MAIN */
+
+/* main {
+  margin-bottom: 25px;
+} */
+
+main h2 {
+  color: #799acc;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  /* background-color: blueviolet; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* flex: 1; */
+  /* width: 100%; */
+  margin-bottom: 10px;
+  /* gap: 1%; */
+  /* flex-wrap: wrap; */
+}
+
+.foto {
+  display: flex;
+  justify-content: right;
+  /* align-items: flex-end; */
+  /* flex:1; */
+  /* flex: auto; */
+  flex-basis: 33%;
+  /* background-color: brown; */
+}
+
+.foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: transparent solid 5px;
+  /* border-bottom: #799acc solid 5px; */
+  border-bottom: #d3b85e solid 5px;
+  padding: 5px;
+  /* flex-basis: 50; */
+  /* margin: 10px; */
+  /* margin-left: 5em; */
+}
+
+.foto img:hover {
+  color: white;
+  opacity: 75%;
+}
+
+.cloudresumechallenge {
+  /* background-color: aqua; */
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 2%; */
+  /* align-items: center; */
+  /* padding-top: 40px; */
+  /* padding-right: 5em; */
+}
+
+.contact li {
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+  /* width: 100%; */
+  /* flex-wrap: wrap; */
+}
+
+.left-side,
+.right-side {
+  /* flex: auto; */
+  /* flex: ; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-side {
+  flex-basis: 32%;
+  text-align: right;
+}
+
+.right-side {
+  flex-basis: 68%;
+  /* flex-grow: 5; */
+  /* background-color: aqua; */
+}
+
+.left-wrapper {
+  /* margin-right: 38%; */
+  padding-right: 15px;
+  border-right: #799acc solid 5px;
+}
+
+/* .right-side {
+  margin-right: 2.5em; */
+/* padding-right: 20%;
+} */
+
+.right-wrapper {
+  padding-left: 35px;
+  /* flex-grow: calc(50%); */
+  /* padding-right: -50%; */
+  /* background-color: #d3b85e; */
+  /* margin-right: 0%; */
+  /* position: relative; */
+  /* left: -25%; */
+  /* width: 120%; */
+}
+
+.skills li {
+  list-style: none;
+}
+
+.experience ul {
+  padding-left: 1.5em;
+}
+
+.certificaten a {
+  text-decoration: none;
+}
+
+/* .certificaten a p {
+  color: hotpink;
+} */
+
+.certificaten p:hover {
+  color: rgb(121, 19, 161);
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 0px;
+  /* align-items: center; */
+  /* height: 0px; */
+  /* background-color: #799acc; */
+}
+
+.resume-footer img {
+  height: 1.875em;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}

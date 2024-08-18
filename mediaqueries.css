@@ -1,0 +1,103 @@
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  body {
+    /* height: auto; */
+    /* width: fit-content; */
+    /* display: block; */
+    /* block-size: auto; */
+    /* float: none; */
+    /* overflow-x: hidden; */
+    /* min-width: 100%; */
+  }
+
+  header {
+    /* height: 10em; */
+    padding: 0;
+  }
+
+  header h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+  }
+  header p {
+    font-size: 1rem;
+  }
+
+  .resume-container {
+    /* margin-bottom: 10px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* width: 90%; */
+    /* padding: 10px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+
+  .container {
+    align-items: center;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    /* margin: 10px; */
+    /* margin-bottom: 10px; */
+  }
+
+  .container .cloudresumechallenge h2 {
+    letter-spacing: normal;
+    font-size: 1.32rem;
+    /* text-align: center; */
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    /* text-align: center; */
+  }
+
+  .left-wrapper {
+    /* background-color: aqua; */
+    /* display: flex; */
+    /* flex-basis: 100%; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-right: none;
+    text-align: left;
+    margin-bottom: 0.8em;
+    padding: 0;
+    padding-bottom: 0.8em;
+    border-bottom: #799acc solid 0.15em;
+    border-bottom: #d3b85e solid 0.15em;
+    border-top: #d3b85e solid 0.15em;
+    padding-top: 0.8em;
+  }
+
+  .right-wrapper {
+    text-align: left;
+    padding: 0;
+  }
+
+  .right-wrapper .experience {
+    text-align: left;
+    /* margin-left: 15%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .experience h2 {
+    /* text-align: center; */
+  }
+
+  .foto {
+    margin-bottom: 20px;
+  }
+
+  a:visited {
+    color: rgb(85, 85, 85);
+  }
+}
