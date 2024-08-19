@@ -10,6 +10,7 @@
     font-size: 1.8em;
     letter-spacing: 0.1em;
   }
+
   header p {
     font-size: 1rem;
   }
@@ -17,19 +18,22 @@
   .container {
     align-items: center;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
 
-  .container .cloudresumechallenge h2 {
+  h2 {
+    font-size: 1.2em;
+  }
+  /* .container .cloudresumechallenge h2 {
     letter-spacing: normal;
     font-size: 1.18rem;
-    /* text-align: center; */
-  }
+    text-align: center;
+  } */
 
   .main-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .left-wrapper {
@@ -40,17 +44,30 @@
     padding-bottom: 0.8em;
     border-bottom: #799acc solid 0.15em;
     border-bottom: #d3b85e solid 0.15em;
-    border-top: #d3b85e solid 0.15em;
+    /* border-top: #d3b85e solid 0.15em; */
     padding-top: 0.8em;
   }
 
   .right-wrapper {
+    display: flex;
+    border-bottom: #d3b85e solid 0.15em;
+    flex-direction: column-reverse;
     text-align: left;
     padding: 0;
+    margin: 0;
+    border-left: none;
   }
 
   .right-wrapper .experience {
+    padding-top: 0.8em;
+    border-top: #d3b85e solid 0.15em;
+    border-bottom: #d3b85e solid 0.15em;
     text-align: left;
+    order: 0;
+  }
+
+  .cloudresumechallenge {
+    padding-top: 0.8em;
   }
 
   /* .experience h2 {
@@ -58,6 +75,15 @@
 
   .foto {
     margin-bottom: 20px;
+  }
+
+  /* .foto img {
+    height: 180px;
+    width: 180px;
+  } */
+
+  a {
+    text-decoration: none;
   }
 
   a:visited {

@@ -8,46 +8,28 @@
   box-sizing: border-box;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-/* main {
-
-} */
-
 header,
 main,
 footer {
   padding: 20px;
   margin-bottom: 10px;
-  background-color: #ececec;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* height: 100vh; */
-  /* height: calc(100vh - 20px); */
-  /* height: 100%; */
-  /* overflow-x: hidden; */
+  height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
-  /* height: 100dvh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 p,
+h5,
 ul {
   color: rgb(85, 85, 85);
 }
@@ -71,14 +53,13 @@ a,
 /* RESUME CONTAINER */
 
 .resume-container {
+  margin: 10px;
   max-width: 800px;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   box-sizing: border-box;
-
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* margin: 0px; */
 }
 
 /* HEADER */
@@ -88,11 +69,8 @@ header {
   justify-content: center;
   align-items: center;
   height: 12em;
-  /* height: 30%; */
   background-color: #799acc;
   flex-direction: column;
-  width: 100%;
-  /* padding: 10px; */
 }
 
 header h2 {
@@ -131,35 +109,24 @@ main h2 {
   display: flex;
   align-content: center;
   justify-content: center;
-  /* flex: 1; */
-  /* width: 100%; */
-  margin-bottom: 10px;
-  /* gap: 1%; */
-  /* flex-wrap: wrap; */
+  margin-bottom: 2em;
+  gap: 5%;
 }
 
 .foto {
   display: flex;
   justify-content: right;
-  /* align-items: flex-end; */
-  /* flex:1; */
-  /* flex: auto; */
-  flex-basis: 33%;
-  /* background-color: brown; */
+  flex-basis: 35%;
 }
 
 .foto img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: transparent solid 5px;
-  /* border-bottom: #799acc solid 5px; */
   border-bottom: #d3b85e solid 5px;
   padding: 5px;
-  /* flex-basis: 50; */
-  /* margin: 10px; */
-  /* margin-left: 5em; */
 }
 
 .foto img:hover {
@@ -167,16 +134,12 @@ main h2 {
   opacity: 75%;
 }
 
-.cloudresumechallenge {
-  /* background-color: aqua; */
+.profiel {
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 65%;
   flex-direction: column;
   justify-content: center;
-  /* padding-left: 2%; */
-  /* align-items: center; */
-  /* padding-top: 40px; */
-  /* padding-right: 5em; */
+  padding-top: 1em;
 }
 
 .contact li {
@@ -185,14 +148,10 @@ main h2 {
 
 .main-container {
   display: flex;
-  /* width: 100%; */
-  /* flex-wrap: wrap; */
 }
 
 .left-side,
 .right-side {
-  /* flex: auto; */
-  /* flex: ; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -205,50 +164,39 @@ main h2 {
 
 .right-side {
   flex-basis: 68%;
-  /* flex-grow: 5; */
-  /* background-color: aqua; */
 }
 
 .left-wrapper {
-  /* margin-right: 38%; */
   padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   border-right: #799acc solid 5px;
 }
 
-/* .right-side {
-  margin-right: 2.5em; */
-/* padding-right: 20%;
-} */
-
 .right-wrapper {
-  padding-left: 35px;
-  /* flex-grow: calc(50%); */
-  /* padding-right: -50%; */
-  /* background-color: #d3b85e; */
-  /* margin-right: 0%; */
-  /* position: relative; */
-  /* left: -25%; */
-  /* width: 120%; */
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: #d3b85e solid 5px;
 }
 
 .skills li {
   list-style: none;
 }
 
+.cloudresumechallenge ul {
+  padding-left: 1.5em;
+}
+
 .experience ul {
   padding-left: 1.5em;
 }
 
-.certificaten a {
-  text-decoration: none;
-}
-
-/* .certificaten a p {
-  color: hotpink;
-} */
-
-.certificaten p:hover {
-  color: rgb(121, 19, 161);
+.certificaten img {
+  height: auto;
+  width: 100%;
+  transform: scale(60%);
 }
 
 /* FOOTER */
@@ -257,15 +205,14 @@ footer {
   display: flex;
   justify-content: center;
   gap: 0.5em;
-  margin-bottom: 0px;
-  /* align-items: center; */
-  /* height: 0px; */
-  /* background-color: #799acc; */
+  /* margin-bottom: 0px; */
 }
 
 .resume-footer img {
   height: 1.875em;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
+
+/* .resume-footer .git {
+
+} */
