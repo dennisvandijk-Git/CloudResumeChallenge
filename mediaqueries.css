@@ -2,17 +2,16 @@
 
 @media (max-width: 768px) {
   header {
-    /* height: 10em; */
     padding: 0;
+    text-align: center;
   }
 
   header h2 {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
+    font-size: 3rem;
   }
 
   header p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .container {
@@ -20,16 +19,16 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
+    padding-bottom: 0.8em;
   }
 
   h2 {
     font-size: 1.2em;
   }
-  /* .container .cloudresumechallenge h2 {
-    letter-spacing: normal;
-    font-size: 1.18rem;
-    text-align: center;
-  } */
+
+  .experience {
+    padding-bottom: 0.8em;
+  }
 
   .resume-main {
     margin-bottom: 0;
@@ -42,7 +41,7 @@
 
   .left-side {
     align-items: flex-start;
-    border-bottom: #d3b85e solid 0.15em;
+    border-bottom: #9179b7 solid 0.15em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
   }
@@ -51,37 +50,19 @@
     text-align: center;
   }
   .cert-wrapper {
-    /* text-align: center; */
-    display: flex;
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
-    /* gap: 0.4em; */
-    /* margin-top: 0.2em; */
+    width: 15rem;
+    height: auto;
   }
 
-  .certificaten img {
-    /* height: auto; */
-    width: 25%;
-  }
-  /* .certificaten a {
-    align-items: flex-start;
-    gap: 0.4em;
-    margin-top: 0.3em;
-  } */
   .left-wrapper {
     border-right: none;
     text-align: left;
-    /* margin-bottom: 0.8em; */
     padding: 0;
-    /* padding-bottom: 0.8em; */
-
-    /* border-top: #d3b85e solid 0.15em; */
   }
 
   .right-wrapper {
     display: flex;
-    border-bottom: #d3b85e solid 0.15em;
+    border-bottom: #9179b7 solid 0.15em;
     flex-direction: column-reverse;
     text-align: left;
     padding: 0;
@@ -91,8 +72,8 @@
 
   .right-wrapper .experience {
     padding-top: 0.8em;
-    border-top: #d3b85e solid 0.15em;
-    border-bottom: #d3b85e solid 0.15em;
+    border-top: #9179b7 solid 0.15em;
+    border-bottom: #9179b7 solid 0.15em;
     text-align: left;
     order: 0;
   }
@@ -101,17 +82,9 @@
     padding-top: 0.8em;
   }
 
-  /* .experience h2 {
-  } */
-
   .foto {
     margin-bottom: 20px;
   }
-
-  /* .foto img {
-    height: 180px;
-    width: 180px;
-  } */
 
   a {
     text-decoration: none;
@@ -119,5 +92,57 @@
 
   a:visited {
     color: rgb(85, 85, 85);
+  }
+}
+
+@media (max-width: 620px) {
+  header h2 {
+    font-size: 2.8rem;
+    letter-spacing: normal;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header h2 {
+    font-size: 2.6rem;
+    letter-spacing: normal;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 2.4rem;
+    letter-spacing: normal;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 410px) {
+  header h2 {
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+  header p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 350px) {
+  header h2 {
+    font-size: 1.8rem;
+    letter-spacing: normal;
+  }
+  header p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
   }
 }

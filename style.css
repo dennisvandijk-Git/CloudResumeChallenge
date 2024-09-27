@@ -40,9 +40,10 @@ a {
   text-decoration: none;
   color: rgb(85, 85, 85);
 }
-a:hover {
+
+/* a:hover {
   color: rgb(121, 19, 161);
-}
+} */
 
 /* TRANSITION */
 
@@ -73,21 +74,23 @@ header {
   align-items: center;
   height: 12em;
   background-color: #799acc;
+  background-color: #7c1e2a;
+  background-color: #2ca880;
+  background-color: #86d293;
+  background-image: linear-gradient(to top right, #79b791, #5b9471);
   flex-direction: column;
 }
 
 header h2 {
-  /* font-family: "Times New Roman", Times, serif; */
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-family: "Courier New", Courier, monospace;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-weight: normal;
   display: flex;
   letter-spacing: 0.1rem;
   color: white;
   font-size: 3.2em;
   z-index: 2;
-  /* margin-bottom: 1px; */
+  border-top: white 2.5px solid;
+  /* border-bottom: white 2.5px solid; */
 }
 
 header p {
@@ -99,70 +102,62 @@ header p {
   font-size: 1.25em;
   letter-spacing: 0.1rem;
   z-index: 2;
+  /* border-bottom: white 1.5px solid; */
 }
 
-.transparant {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
-  /* border-radius: 8px; Optional: rounded corners */
-  z-index: 1; /* Ensures the overlay is above the text */
-  display: flex; /* Flexbox for any content inside the overlay */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+.counter {
+  text-align: right;
+  font-size: 0.68rem;
+  margin-top: -20px;
 }
 
 /* MAIN */
 
-/* main {
-  margin-bottom: 25px;
-} */
-
 main h2 {
   color: #799acc;
-  /* letter-spacing: 0.05em; */
+  color: #86d293;
+  color: #79b791;
 }
 
 .container {
-  /* background-color: blueviolet; */
   display: flex;
-  align-content: center;
-  justify-content: center;
   margin-bottom: 2em;
-  gap: 5%;
 }
 
 .foto {
   display: flex;
-  justify-content: right;
-  flex-basis: 39%;
+  flex-basis: 33%;
 }
 
 .foto img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: transparent solid 5px;
-  border-bottom: #d3b85e solid 5px;
+  /* border-bottom: #d3b85e solid 5px; */
+  /* border-bottom: #8b5ed3 solid 5px; */
+  /* border-bottom: #2c93aa solid 5px; */
+  border-bottom: #9179b7 solid 5px;
   padding: 5px;
+  box-sizing: border-box;
 }
 
 .foto img:hover {
-  color: white;
-  opacity: 75%;
+  transition: ease-out 1s;
+  border-top: 5px solid #79b791;
+  border-left: 5px solid #79b791;
+  border-right: 5px solid #79b791;
 }
 
-.profiel {
+.persoonlijk {
   display: flex;
-  flex-basis: 65%;
+  flex-basis: 70%;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1.2em;
 }
 
-.contact li {
+.EIGENSCHAPPEN li {
   list-style: none;
 }
 
@@ -192,16 +187,21 @@ main h2 {
   padding-right: 15px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  border-right: #799acc solid 5px;
+  /* border-right: #799acc solid 5px; */
+  /* border-right: #86d293 solid 5px; */
+  /* border-right: #2c93aa solid 5px; */
+  border-right: #9179b7 solid 5px;
 }
 
 .right-wrapper {
   margin-left: 10px;
   padding-left: 15px;
-  border-left: #d3b85e solid 5px;
+  /* border-left: #d3b85e solid 5px; */
+  /* border-left: #8b5ed3 solid 5px; */
+  /* border-left: #4675bb solid 5px; */
+  /* border-left: #2c93aa solid 5px; */
+  /* border-left: #86d293 solid 5px; */
+  border-left: #79b791 solid 5px;
 }
 
 .skills li {
@@ -210,45 +210,22 @@ main h2 {
 
 .cloudresumechallenge ul {
   list-style: none;
-  /* padding-left: 1.5em; */
 }
 
 .experience ul {
   padding-left: 1.5em;
 }
 
-/* .certificaten a {
-  display: flex;
-  flex-direction: column;
-  align-items: last baseline;
-  gap: 0.4em;
-  margin-top: 0.2em;
-} */
 .cert-wrapper {
-  /* flex-direction: column-reverse; */
-  flex-direction: column;
-  /* align-items: last baseline; */
-  /* gap: 0.4em; */
   margin-top: 0.2em;
 }
 
 .certificaten img {
   height: auto;
   width: 50%;
-  /* transform: scale(60%); */
-  /* display: flex; */
-  /* justify-content: right; */
-  /* align-items: center; */
-  /* margin-left: 1.1em; */
-  /* margin-top: -2em; */
-}
-
-.MS900 {
-  filter: grayscale();
 }
 
 .CRCtext {
-  /* text-decoration: overline; */
   text-decoration: underline;
 }
 
@@ -258,14 +235,9 @@ footer {
   display: flex;
   justify-content: center;
   gap: 0.5em;
-  /* margin-bottom: 0px; */
 }
 
 .resume-footer img {
   height: 1.875em;
   display: flex;
 }
-
-/* .resume-footer .git {
-
-} */

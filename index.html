@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Resume</title>
+  <title>D. van Dijk | Resume</title>
+  <link rel="icon" type="image/png" href="assets/cloud.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -13,70 +14,64 @@
   <div class="resume-container">
 
     <header id="resume-header">
+
       <div class="transparant"></div>
-      <!-- <div class="logo">DENNIS VAN DIJK</div> -->
-      <!-- <div class="functie">IT HELPDESKMEDEWERKER</div> -->
-      <h2>DENNIS VAN DIJK</h2>
+      <h2 class="dennisHeader">DENNIS VAN DIJK</h2>
       <p>IT SKILLED HELPDESKMEDEWERKER</p>
     </header>
 
-
-
     <main class="resume-main">
-      <!-- Sections like Experience, Skills, Education, Projects -->
+      <div class="counter">
+        <p>Visits: <span id="visits-count"></span></p>
+      </div>
+
       <div class="container">
         <div class="foto">
           <img src="assets/dennis.jpg" />
         </div>
-        <div class="profiel">
-          <h2>PROFIEL</h2>
+        <div class="persoonlijk">
+          <h2>PERSOONLIJK</h2>
           <p>
-            Gedreven IT-proffessional met een passie voor automation. Lorem
-            ipsum odor amet, consectetuer adipiscing elit. Mauris diam
-            ultricies torquent odio risus est. Hendrerit consectetur platea
-            class consequat per maecenas mauris.
+            Door mijn behoefte om zaken van A tot Z écht te begrijpen ben ik breed geïnteresseerd
+            in alles wat met IT infrastructuur en technisch systeembeheer te maken heeft.
+            Als echte autodidact ga ik verder waar anderen stoppen en ben
+            ik ook in mijn vrije tijd veel bezig met mijn ontwikkeling. Een flinke dosis discipline,
+            doorzettingsvermogen en mijn vastberadenheid helpt daar zeker bij.
           </p>
-          <br />
         </div>
       </div>
       <div class="main-container">
         <div class="left-side">
           <div class="left-wrapper">
-            <!-- <div class="contact">
-              <h2>CONTACT</h2>
-              <ul>
-                <a href="mailto: dennis@dvandijk.com">
-                  <li>dennis@dvandijk.com</li>
-                </a>
-                <li>Zoetermeer, Zuid-Holland</li>
-              </ul>
-              <br />
-            </div> -->
             <div class="skills">
               <h2>SKILLS</h2>
               <ul>
-                <li>Azure</li>
-                <li>Microsoft 365</li>
                 <li>Powershell</li>
                 <li>Active Directory</li>
+                <li>Microsoft Azure</li>
+                <li>Microsoft 365</li>
+                <li>Topdesk</li>
               </ul>
               <br />
             </div>
+            <div class="EIGENSCHAPPEN">
+              <h2>EIGENSCHAPPEN</h2>
+              <ul>
+                <li>Leergierig</li>
+                <li>Nauwkeurig</li>
+                <li>Vastberaden</li>
+                <li>Oog voor detail</li>
+                <li>Oplossingsgericht</li>
+              </ul>
+            </div>
+            <br>
             <div class="opleiding">
               <h2>OPLEIDING</h2>
-              <!-- <h5>2007 - 2009</h5> -->
-              <p style="font-weight: bold">2007 - 2009</p>
+              <p>2007 - 2009</p>
               <p>
                 ICT media beheer<br />
                 Grafisch Lyceum, Rotterdam<br />
               </p>
-              <!-- <br />
-              <p>2004 - 2007</p>
-              <p>
-                Stedelijk College, Zoetermeer <br />
-                Vmbo Techniek, Afdeling Bouwtechniek <br />
-                diploma behaald
-              </p> -->
               <br />
             </div>
             <div class="certificaten">
@@ -84,9 +79,12 @@
               <div class="cert-wrapper">
                 <a href="https://learn.microsoft.com/api/credentials/share/en-us/DennisvanDijk-4934/59F8565E58411898?sharingId=4856001E28D9444A"
                   target="_blank" rel="noopener noreferrer" class="badge-link">
-                  <img src="assets/az900-50.png" alt="AZ-900" class="AZ900" />
+                  <img src="assets/AZ900.png" alt="AZ-900" class="AZ900" />
                 </a>
-                <img src="assets/MS900.png" alt="" class="MS900" />
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/DennisvanDijk-4934/2A2D7DB8A7412B0D?sharingId=4856001E28D9444A"
+                  target="_blank" rel="noopener noreferrer" class="badge-link">
+                  <img src="assets/MS900.png" alt="" class="MS900" />
+                </a>
               </div>
             </div>
           </div>
@@ -94,18 +92,13 @@
         <div class="right-side">
           <div class="right-wrapper">
             <div class="cloudresumechallenge">
-              <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank"
-                rel="noopener noreferrer">
-                <h2>CLOUD RESUME CHALLENGE</h2>
+              <h2>CLOUD RESUME CHALLENGE</h2>
               </a>
               <p>
-                Meer info over de challenge
-                <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank"
-                  rel="noopener noreferrer" class="CRCtext">"Cloud Resume Challenge"</a>. Lorem ipsum odor amet,
-                consectetuer adipiscing elit. Et
-                parturient lectus fermentum senectus etiam porttitor convallis
-                volutpat. sit senectus luctus enim neque cras vitae dictumst.
-                Tempor maximus velit finibus.
+                Om meer ervaring op te doen in werken met de cloud ben ik in mijn vrije tijd bezig met de "<a
+                  href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank"
+                  rel="noopener noreferrer" class="CRCtext">Cloud Resume Challenge</a>". Zo leer ik op een praktische
+                manier meer over de verschillende aspecten van de cloud.
               </p>
               <br />
               <h5>CHUNK 0 (Certification)</h5>
@@ -145,30 +138,30 @@
               <br />
               <h5>CHUNK 5 (The blog ... and beyond)</h5>
               <ul>
-                <li>&#x2610; Ongoing</li>
+                <li>&#x2610; Blog post</li>
               </ul>
               <br />
             </div>
             <div class="experience">
-              <h2>EXPERIENCE</h2>
+              <h2>ERVARING</h2>
               <h5>IT SKILLED HELPDESKMEDEWERKER</h5>
               <p>Raad van State</p>
-              <p>2024 - Present</p>
+              <p>2024 - huidig</p>
               <ul>
                 <li>
                   Automatiseren en optimaliseren van de bedrijfsprocessen
                 </li>
                 <li>
-                  Afhandeling van binnenkomende tickets (telefoon / e-mail)
+                  Afhandeling van binnenkomende tickets (telefoon/e-mail)
                 </li>
-                <li>Active directory - Microsoft 365 CloudSuite</li>
+                <li>Herinrichten inventarisatieproces van IT-middelen</li>
               </ul>
-              <br />
             </div>
           </div>
         </div>
       </div>
     </main>
+
     <footer class="resume-footer">
       <a href="mailto:dennis@dvandijk.com">
         <img src="assets/mail.png" alt="e-mail" class="mail" />
@@ -179,8 +172,8 @@
       <a href="https://github.com/dennisvandijk-Git" target="_blank" rel="noopener noreferrer">
         <img class="git" src="assets/github-mark.png" alt="github" />
       </a>
-      <!-- <p>Additional Contact Info or Social Links</p> -->
     </footer>
+
   </div>
   <script src="script.js"></script>
 </body>
