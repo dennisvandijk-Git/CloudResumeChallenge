@@ -1,11 +1,9 @@
 const visitsCount = document.getElementById("visits-count");
 
-let visitCount = sessionStorage.getItem("visit")
-  ? parseInt(sessionStorage.getItem("visit"))
-  : 0;
-
-visitCount += 1;
-
-visitsCount.textContent = visitCount;
-
-sessionStorage.setItem("visit", visitCount);
+fetch(
+  "https://visitor-counter-api-http-trigger.azurewebsites.net/api/http_trigger_visitor_counter?"
+)
+  .then((response) => response.json())
+  .then((data) => {
+    visitsCount.textContent = data;
+  });
