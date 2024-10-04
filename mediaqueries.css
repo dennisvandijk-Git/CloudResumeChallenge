@@ -14,16 +14,16 @@
     font-size: 1.2rem;
   }
 
+  h2 {
+    font-size: 1.2em;
+  }
+
   .container {
     align-items: center;
     flex-direction: column;
     text-align: center;
     margin: 0;
     padding-bottom: 0.8em;
-  }
-
-  h2 {
-    font-size: 1.2em;
   }
 
   .experience {
@@ -84,6 +84,12 @@
 
   .foto {
     margin-bottom: 20px;
+  }
+
+  .foto img {
+    border-top: 5px solid #79b791;
+    border-left: 5px solid #79b791;
+    border-right: 5px solid #79b791;
   }
 
   a {
