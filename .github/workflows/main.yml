@@ -33,8 +33,8 @@ jobs:
         gh api \
           --method POST \
           -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-          -H "Accept: application/vnd.github+json" \
-          -p {"purge_everything":true} \
+          -H "Content-Type: application/json" \
+          -p '{"purge_everything":true}' \
           /zones/$ZONE_ID/purge_cache \
           --hostname "api.cloudflare.com"
     
