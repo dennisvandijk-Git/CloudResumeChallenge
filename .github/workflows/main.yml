@@ -28,7 +28,7 @@ jobs:
     - name: Purge Cloudflare Cache
       env:
         CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        ZONE_ID: "YOUR_ZONE_ID"
+        ZONE_ID: mQazrVT36UXTM7ILhevjZ2lOH0ieRKc8kany9ntB
       run: |
         gh api --method POST \
           -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
