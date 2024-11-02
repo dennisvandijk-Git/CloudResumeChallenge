@@ -1,3 +1,4 @@
+
 name: Blob storage website CI
 
 on:
@@ -23,9 +24,23 @@ jobs:
       with:  
         inlineScript: |
             az cdn endpoint purge --content-paths "/*" --profile-name staticresumewebsite --name dennisvandijk --resource-group storage-resource-group --no-wait
-  
+    
+    - name: Purge Cloudflare Cache
+      env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ZONE_ID: "3543af4aeec4a1cd1376ca37da65a522"
+      run: |
+        gh api --method POST \
+          -H "Authorization: Beared $CLOUDFLARE_API_TOKEN" \
+          -H "Content-Type: application/json" \
+          -p '{"purge_everything":true}' \
+          /zones/$ZONE_ID/purge_cache \
+          --hostname "api.cloudflare.com"
+    
   # Azure logout
     - name: logout
       run: |
             az logout
       if: always()
+
+    
