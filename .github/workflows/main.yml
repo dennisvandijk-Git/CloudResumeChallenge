@@ -31,7 +31,7 @@ jobs:
           ZONE_ID: "3543af4aeec4a1cd1376ca37da65a522"
       run: |
         gh api --method POST \
-          -H "Authorization: Beared $CLOUDFLARE_API_TOKEN" \
+          -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
           -H "Content-Type: application/json" \
           -p '{"purge_everything":true}' \
           /zones/$ZONE_ID/purge_cache \
