@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:  
         inlineScript: |
-            az cdn endpoint purge --content-paths "/*" --profile-name staticresumewebsite --name dennisvandijk.azureedge.net --resource-group storage-resource-group --no-wait
+            az cdn endpoint purge --content-paths "/*" --profile-name staticresumewebsite --name dennisvandijk --resource-group storage-resource-group --no-wait
   
   # Azure logout
     - name: logout
