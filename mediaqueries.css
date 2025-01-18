@@ -1,0 +1,150 @@
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 3rem;
+    letter-spacing: normal;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .container {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0.8em;
+  }
+
+  .experience {
+    padding-bottom: 0.8em;
+  }
+
+  .resume-main {
+    margin-bottom: 0;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left-side {
+    align-items: flex-start;
+    border-bottom: #9179b7 solid 0.15em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+
+  .left-side {
+    text-align: center;
+  }
+  .cert-wrapper {
+    width: 15rem;
+    height: auto;
+  }
+
+  .left-wrapper {
+    border-right: none;
+    text-align: left;
+    padding: 0;
+  }
+
+  .right-wrapper {
+    display: flex;
+    border-bottom: #9179b7 solid 0.15em;
+    flex-direction: column-reverse;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    border-left: none;
+  }
+
+  .right-wrapper .experience {
+    padding-top: 0.8em;
+    border-top: #9179b7 solid 0.15em;
+    border-bottom: #9179b7 solid 0.15em;
+    text-align: left;
+    order: 0;
+  }
+
+  .cloudresumechallenge {
+    padding-top: 0.8em;
+  }
+
+  .foto {
+    margin-bottom: 20px;
+  }
+
+  .foto img {
+    border-top: 5px solid #79b791;
+    border-left: 5px solid #79b791;
+    border-right: 5px solid #79b791;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: rgb(85, 85, 85);
+  }
+}
+
+@media (max-width: 620px) {
+  header h2 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header h2 {
+    font-size: 2.7rem;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 2.3rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 410px) {
+  header h2 {
+    font-size: 1.95rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  header h2 {
+    font-size: 1.75rem;
+    border-top: white 2px solid;
+  }
+  header p {
+    font-size: 0.7rem;
+  }
+}

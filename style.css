@@ -1,0 +1,244 @@
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+main {
+  margin-bottom: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h5,
+ul {
+  color: rgb(85, 85, 85);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+
+/* a:hover {
+  color: rgb(121, 19, 161);
+} */
+
+/* TRANSITION */
+
+a,
+.btn,
+.foto img {
+  transition: all 300ms ease;
+}
+
+/* RESUME CONTAINER */
+
+.resume-container {
+  margin: 10px;
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  background-color: #799acc;
+  background-color: #7c1e2a;
+  background-color: #2ca880;
+  background-color: #86d293;
+  background-image: linear-gradient(to top right, #79b791, #5b9471);
+  flex-direction: column;
+}
+
+header h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  display: flex;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-size: 3.2em;
+  z-index: 2;
+  border-top: white 2.5px solid;
+  /* border-bottom: white 2.5px solid; */
+}
+
+header p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+  font-weight: 100;
+  display: flex;
+  color: white;
+  font-size: 1.25em;
+  letter-spacing: 0.1rem;
+  z-index: 2;
+  /* border-bottom: white 1.5px solid; */
+}
+
+.counter {
+  min-height: 12px;
+  text-align: right;
+  font-size: 0.68rem;
+  margin-top: -20px;
+}
+
+/* MAIN */
+
+main h2 {
+  color: #799acc;
+  color: #86d293;
+  color: #79b791;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.foto {
+  display: flex;
+  flex-basis: 33%;
+}
+
+.foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: transparent solid 5px;
+  /* border-bottom: #d3b85e solid 5px; */
+  /* border-bottom: #8b5ed3 solid 5px; */
+  /* border-bottom: #2c93aa solid 5px; */
+  border-bottom: #9179b7 solid 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.foto img:hover {
+  transition: ease-out 1s;
+  border-top: 5px solid #79b791;
+  border-left: 5px solid #79b791;
+  border-right: 5px solid #79b791;
+}
+
+.persoonlijk {
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.EIGENSCHAPPEN li {
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 32%;
+  text-align: right;
+}
+
+.right-side {
+  flex-basis: 68%;
+}
+
+.left-wrapper {
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  /* border-right: #799acc solid 5px; */
+  /* border-right: #86d293 solid 5px; */
+  /* border-right: #2c93aa solid 5px; */
+  border-right: #9179b7 solid 5px;
+}
+
+.right-wrapper {
+  margin-left: 10px;
+  padding-left: 15px;
+  /* border-left: #d3b85e solid 5px; */
+  /* border-left: #8b5ed3 solid 5px; */
+  /* border-left: #4675bb solid 5px; */
+  /* border-left: #2c93aa solid 5px; */
+  /* border-left: #86d293 solid 5px; */
+  border-left: #79b791 solid 5px;
+}
+
+.skills li {
+  list-style: none;
+}
+
+.cloudresumechallenge ul {
+  list-style: none;
+}
+
+.experience ul {
+  padding-left: 1.5em;
+}
+
+.cert-wrapper {
+  margin-top: 0.2em;
+}
+
+.certificaten img {
+  height: auto;
+  width: 50%;
+}
+
+.CRCtext {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.resume-footer img {
+  height: 1.875em;
+  display: flex;
+}
