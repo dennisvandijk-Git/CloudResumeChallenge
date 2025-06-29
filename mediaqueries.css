@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 550px) {
+  header  {
+    height: 14em;
+  }
   header h2 {
     font-size: 2.7rem;
   }
@@ -122,6 +125,9 @@
 }
 
 @media (max-width: 480px) {
+  header  {
+    height: 13em;
+  }
   header h2 {
     font-size: 2.3rem;
   }
@@ -131,6 +137,9 @@
 }
 
 @media (max-width: 410px) {
+  header  {
+    height: 12em;
+  }
   header h2 {
     font-size: 1.95rem;
   }
