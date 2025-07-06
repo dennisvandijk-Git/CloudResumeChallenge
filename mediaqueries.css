@@ -140,6 +140,9 @@
   .blog-header h1 {
     letter-spacing: 0.3rem;
   }
+  .blog-main h2 {
+    text-decoration-thickness: 1px;
+  }
 }
 
 @media (max-width: 410px) {
