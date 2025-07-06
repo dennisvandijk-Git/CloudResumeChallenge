@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D. van Dijk | Blog</title>
+    <link rel="icon" type="image/png" href="assets/cloud.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.cdnfonts.com/css/vt323" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/ibm-plex-mono-3"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="blog-container">
+      <header class="blog-header">
+        <h1>CLOUD RESUME BLOG</h1>
+      </header>
+      <main class="blog-main">
+        <div class="return-arrow">
+          <a href="index.html">&#x2B8C;&#xFE0E;</a>
+        </div>
+        <h2>Mijn ervaring met de Cloud Resume Challenge</h2>
+        <p>
+          De Cloud Resume Challenge was de perfecte manier om mijn
+          perfectionistische, leergierige en onderzoekende zelf uit te dagen. In
+          deze blog deel ik mijn ervaringen rondom elke stap in het proces: van
+          het bouwen van een website tot het automatiseren van de infrastructuur
+          via CI/CD.
+        </p>
+        <div class="pipeline">
+          <!-- <img src="assets/Architecture.png" alt="pipeline" /> -->
+        </div>
+        <h2>Stap 1: Website bouwen met HTML en CSS</h2>
+        <p>
+          Aangezien ik vroeger de ambitie had om webdesigner of developer te
+          worden, is zowel HTML als CSS geen onbekend terrein voor mij. Deze
+          ervaring hielp mij dan ook om – na wat onderzoek te hebben gedaan en
+          een visueel ontwerp te hebben gemaakt – direct aan de slag te gaan. Ik
+          heb een creatieve en kritische blik, dus het duurt vaak even voordat
+          ik helemaal tevreden ben. Hierdoor heb ik verschillende iteraties
+          doorlopen.
+          <br />
+          <br />
+          Het responsief maken van de site bleek lastiger dan verwacht, omdat de
+          basisstructuur niet optimaal was en moderne layout tools als Grid of
+          Flexbox nog ontbraken. Na het herstructureren van de HTML, het
+          toepassen van responsive elementen zoals media queries en de Flexbox
+          layout module en het gebruiken van “em” en “rem” percentages, was het
+          resultaat zoals ik voor ogen had.
+        </p>
+        <h2>Stap 2: Hosting op Azure en HTTPS via CloudFlare</h2>
+        <p>
+          Voor de hosting koos ik Azure, en voor DNS en HTTPS CloudFlare. Dit
+          omdat CloudFlare bekend staat om zijn snelheid, betrouwbaarheid en
+          gebruiksgemak bij domeinregistratie.
+          <br />
+          <br />
+          Het opzetten van HTTPS vond ik een uitdaging. Dit omdat ik te maken
+          kreeg met een 'domain validation' foutmelding. Uiteindelijk bleek dit
+          te liggen aan de DNS/SSL/TLS-instellingen van CloudFlare. In Azure
+          kreeg ik namelijk een foutmelding tijdens het opzetten van de custom
+          domain. Na online research ontdekte ik dat het lag aan de CNAME record
+          die op proxied stond. Het tijdelijk uitzetten hiervan gaf Azure de
+          mogelijkheid om het domein te achterhalen en het succesvol toe te
+          voegen. Daarna heb ik de proxied weer aangezet.
+        </p>
+        <h2>Stap 3: Bezoekersteller bouwen met Azure Functions en CosmosDB</h2>
+        <p>
+          Stap 3 van de Cloud Resume Challenge heeft mij de meeste tijd gekost,
+          vooral omdat ik nog weinig ervaring had met Python, API’s, Azure
+          Functions en CosmosDB. Bij deze stap ik heb veel gehad aan mijn
+          persoonlijkheidskenmerken die ik in mijn inleiding noem. Juist bij dit
+          soort momenten duik ik er echt in om te begrijpen hoe alles precies
+          werkt. Ik lees veel, kijk video’s en blijf volhouden tot iets me lukt.
+          <br />
+          <br />
+          Na veel trial-and-error lukte het om een werkende setup te maken
+          waarin een HTTP-triggerd Azure Function data opslaat in CosmosDB en
+          een response terugstuurt met de huidige unieke bezoekers. De
+          response-tijd zelf was een uitdaging. Eerst dacht ik dat mijn
+          Python-code de oorzaak was, maar uiteindelijk bleek dat deze Azure
+          Function ‘slaapt’ bij inactiviteit en wakker moet worden bij de
+          eerstvolgende request die wordt opgeroepen. Wel heb ik de statische
+          variabelen buiten de HTTP-trigger geplaatst, wat heeft gezorgd voor
+          meer snelheid in de response-tijd.
+          <br />
+          <br />
+          Unieke bezoekers worden gemeten door middel van het IP-adres uit de
+          request headers te gebruiken. Bij een herhaalbezoek wordt de entry
+          geüpdatet in plaats van dat er een nieuwe wordt aangemaakt.
+        </p>
+        <h2>Stap 4: Infrastructuur als code en automatische deployment</h2>
+        <p>
+          Deze stap sprak me het meest aan: infrastructuur automatisch opzetten
+          met één druk op de knop. Dat voelt bijna magisch. Omdat ik ook
+          ervaring wilde opdoen met andere tools dan Azure-native oplossingen,
+          koos ik voor Terraform. Voor de CI/CD pipeline gebruikte ik GitHub
+          Actions.
+          <br />
+          <br />
+          Dit was voor mij nieuw terrein, dus opnieuw ben ik de documentatie
+          ingedoken – vooral via Microsoft Learn en Terraform zelf. Uiteindelijk
+          heb ik de pipeline zo ingericht dat bij een commit naar de main branch
+          de infrastructuur automatisch wordt getest en gedeployed naar Azure.
+          Ook kreeg ik een foutmelding bij Terraform Destroy "Deleting Custom
+          Domain" omdat de DNS CNAME record nog aanwezig was. Dit heb ik
+          opgelost door bij Terraform een time_sleep van 60s toegevoegd.
+        </p>
+        <h2>Reflectie</h2>
+        <p>
+          Wat het doorlopen van de Cloud Resume Challenge mij vooral heeft
+          geleerd, is hoe belangrijk het hebben van nieuwsgierigheid en
+          doorzettingsvermogen is. Er waren momenten waarop dingen niet werkten
+          zoals ik wilde. In plaats van gefrustreerd te raken, heb ik geprobeerd
+          rust en overzicht te creëren. Door écht te willen begrijpen hoe dingen
+          werken, heb ik mezelf ontwikkeld op manieren die ik van tevoren niet
+          had verwacht.
+          <br />
+          <br />
+          De Cloud Resume Challenge heeft niet alleen mijn technische kennis
+          vergroot, maar ook mijn zelfvertrouwen in het zelfstandig oplossen van
+          complexe vraagstukken.
+        </p>
+      </main>
+      <footer class="blog-footer">
+        <a href="mailto:dennis@dvandijk.com">
+          <img src="assets/mail.png" alt="e-mail" class="mail" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/van-dijk-dennis"
+          target="_blank"
+          rel=" noopener noreferrer"
+        >
+          <img src="assets/linkedIn.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://github.com/dennisvandijk-Git"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="git" src="assets/github-mark.png" alt="github" />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

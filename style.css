@@ -14,11 +14,14 @@ footer {
   padding: 20px;
   margin-bottom: 10px;
 }
+
 main {
   margin-bottom: 0;
 }
+
 body {
-  font-family: Arial, Helvetica, Tahoma, "Segoe UI Symbol", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,19 +39,23 @@ ul {
   color: rgb(85, 85, 85);
 }
 
-ul,
-li {
-  font-family: Arial, Helvetica, Tahoma, "Segoe UI Symbol", sans-serif;
-}
-
-li {
-  font-family: inherit;
-  font-size: inherit;
-}
-
 a {
   text-decoration: none;
   color: rgb(85, 85, 85);
+}
+
+/* Make pointer default everywhere except links */
+
+* {
+  cursor: default;
+}
+
+a,
+.blog-underline,
+.resume-footer img,
+.blog-footer img,
+.certificaten img {
+  cursor: pointer;
 }
 
 /* TRANSITION */
@@ -79,33 +86,43 @@ header {
   justify-content: center;
   align-items: center;
   height: 15em;
-  background-color: #799acc;
-  background-color: #7c1e2a;
-  background-color: #2ca880;
-  background-color: #86d293;
   background-image: linear-gradient(to top right, #79b791, #5b9471);
   flex-direction: column;
 }
 
 header h2 {
+  text-decoration: dotted;
+  text-decoration: dashed;
+  text-decoration: wavy;
+  text-decoration: double;
+  text-decoration-line: overline;
+  text-decoration-thickness: 2.5px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 1px;
+  font-family: "IBM Plex Mono", sans-serif;
   font-family: "Courier New", Courier, monospace;
-  font-weight: normal;
+  font-weight: lighter;
   display: flex;
+  letter-spacing: 0.3rem;
   letter-spacing: 0.1rem;
   color: white;
   font-size: 3.2em;
+  font-size: clamp(1.2rem, 3.5vw + 1rem, 3.2rem);
   z-index: 2;
-  border-top: white 2.5px solid;
+  /* border-top: white 2.5px solid; */
 }
 
 header p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
-    Arial, sans-serif;
-  font-weight: 100;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono Light", sans-serif;
+  font-family: "IBM Plex Mono Thin", sans-serif;
+  font-family: "IBM Plex Mono ExtraLight", sans-serif;
+  font-style: italic;
   display: flex;
   color: white;
   font-size: 1.25em;
-  letter-spacing: 0.1rem;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
+  /* letter-spacing: 0.1rem; */
   z-index: 2;
 }
 
@@ -119,8 +136,6 @@ header p {
 /* MAIN */
 
 main h2 {
-  color: #799acc;
-  color: #86d293;
   color: #79b791;
 }
 
@@ -223,6 +238,10 @@ main h2 {
   text-decoration: underline;
 }
 
+.blog-underline {
+  text-decoration: underline;
+}
+
 /* FOOTER */
 
 footer {
@@ -234,4 +253,81 @@ footer {
 .resume-footer img {
   height: 1.875em;
   display: flex;
+}
+
+/* BLOG STYLING */
+
+/* BLOG CONTAINER */
+
+.blog-container {
+  margin: 10px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOG HEADER */
+
+.blog-header {
+  height: 10em;
+  background-image: linear-gradient(to top right, #907eaf, #9179b7);
+  background-image: linear-gradient(to top right, #907eaf, #7f5cb9);
+}
+
+.blog-header h1 {
+  font-size: 4em;
+  font-size: clamp(1.2rem, 4vw + 1rem, 4rem);
+  color: #fff;
+  display: flex;
+  font-family: "VT323", sans-serif;
+  font-style: normal;
+  border-top: none;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+}
+
+.return-arrow {
+  text-align: right;
+  font-size: 1.5rem;
+  margin-top: -25px;
+}
+
+/* BLOG MAIN */
+.pipeline {
+  display: flex;
+}
+
+.pipeline img {
+  margin-top: -2rem;
+  width: 100%;
+  height: auto;
+}
+
+.blog-main h2 {
+  /* border-top: dashed #79b791 3px; */
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-style: wavy;
+  text-decoration-color: #79b791;
+  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 1rem;
+  color: #9179b7;
+}
+
+.blog-main p {
+  margin-bottom: 2rem;
+}
+
+/* BLOG FOOTER */
+
+.blog-footer img {
+  height: 1.875em;
+  display: flex;
+  margin-top: -1.5rem;
 }
