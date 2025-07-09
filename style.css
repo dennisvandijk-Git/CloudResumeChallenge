@@ -92,25 +92,17 @@ header {
 }
 
 header h2 {
-  text-decoration: dotted;
-  text-decoration: dashed;
-  text-decoration: wavy;
   text-decoration: double;
   text-decoration-line: overline;
-  text-decoration-thickness: 2.5px;
-  text-decoration-thickness: 1.5px;
   text-decoration-thickness: 1px;
   font-family: "IBM Plex Mono", sans-serif;
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
   display: flex;
-  letter-spacing: 0.3rem;
   letter-spacing: 0.1rem;
   color: white;
-  font-size: 3.2em;
   font-size: clamp(1.2rem, 3.5vw + 1rem, 3.2rem);
   z-index: 2;
-  /* border-top: white 2.5px solid; */
 }
 
 header p {
@@ -123,7 +115,6 @@ header p {
   color: white;
   font-size: 1.25em;
   font-size: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
-  /* letter-spacing: 0.1rem; */
   z-index: 2;
 }
 
@@ -159,7 +150,6 @@ main h2 {
   border-bottom: #9179b7 solid 5px;
   padding: 5px;
   box-sizing: border-box;
-  /* image-rendering: optimizeSpeed; */
 }
 
 .foto img:hover {
@@ -184,16 +174,14 @@ main h2 {
   display: flex;
 }
 
-.left-side,
+/* .left-side,
 .right-side {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .left-side {
-  display: flex;
-  justify-content: flex-start;
   flex-basis: 32%;
   text-align: right;
 }
@@ -203,6 +191,8 @@ main h2 {
 }
 
 .left-wrapper {
+  position: sticky;
+  top: 0;
   padding-right: 15px;
   display: flex;
   flex-direction: column;
@@ -236,6 +226,16 @@ main h2 {
   width: 50%;
 }
 
+.certificaten img:hover {
+  filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
+  transform: translateY(-0.125rem);
+}
+
+.certificaten img:hover:active {
+  filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
+  transform: translateY(0);
+}
+
 .CRCtext {
   text-decoration: underline;
 }
@@ -255,6 +255,16 @@ footer {
 .resume-footer img {
   height: 1.875em;
   display: flex;
+}
+
+.resume-footer img:hover {
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.2));
+  transform: translateY(-0.125rem);
+}
+
+.resume-footer img:hover:active {
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.2));
+  transform: translateY(0);
 }
 
 /* BLOG STYLING */
@@ -312,8 +322,6 @@ footer {
 }
 
 .blog-main h2 {
-  /* border-top: dashed #79b791 3px; */
-  /* text-decoration-line: underline; */
   text-decoration-style: double;
   text-decoration-style: wavy;
   text-decoration-style: solid;
@@ -322,13 +330,8 @@ footer {
   text-decoration-thickness: 2px;
   margin-bottom: 1rem;
   color: #9179b7;
-  /* border-top: #79b791 solid 2px; */
-  /* border-bottom: #79b791 solid 2px; */
   border-bottom-style: double;
-  /* border-top-style: double; */
-  /* border-top-style: solid; */
   border-color: #79b791;
-  /* border-width: 3px; */
   width: fit-content;
 }
 
@@ -342,4 +345,17 @@ footer {
   height: 1.875em;
   display: flex;
   margin-top: -1.5rem;
+}
+
+.blog-footer img:hover {
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.2));
+  transform: translateY(-0.125rem);
+}
+.return-arrow:hover {
+  transform: translateX(-0.125rem);
+}
+
+.blog-footer img:hover:active {
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.2));
+  transform: translateY(0);
 }
