@@ -110,9 +110,10 @@
           ingedoken – vooral via Microsoft Learn en Terraform zelf. Uiteindelijk
           heb ik de pipeline zo ingericht dat bij een commit naar de main branch
           de infrastructuur automatisch wordt getest en gedeployed naar Azure.
-          Ook kreeg ik een foutmelding bij Terraform Destroy "Deleting Custom
-          Domain" omdat de DNS CNAME record nog aanwezig was. Dit heb ik
-          opgelost door bij Terraform een time_sleep van 60s toegevoegd.
+          Ook kreeg ik bij Terraform Destroy een foutmelding tijdens het
+          verwijderen van de Custom Domain, omdat het DNS CNAME-record nog
+          aanwezig was. Dit heb ik opgelost door in Terraform een time_sleep van
+          60 seconden toe te voegen.
         </p>
         <h2>Reflectie</h2>
         <p>
