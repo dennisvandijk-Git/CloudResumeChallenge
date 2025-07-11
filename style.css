@@ -327,6 +327,7 @@ footer {
   font-family: "VT323", sans-serif;
   font-style: normal;
   border-top: none;
+  text-decoration: none;
   letter-spacing: 0.5rem;
   font-weight: 100;
 }
