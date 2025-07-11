@@ -1,3 +1,26 @@
+// Scroll to top
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scroffFunction();
+};
+
+function scroffFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.opacity = "1";
+    mybutton.style.pointerEvents = "auto";
+  } else {
+    mybutton.style.opacity = "0";
+    mybutton.style.pointerEvents = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Visitor Counter
 const visitsCount = document.getElementById("visits-count");
 
 const fetchVisitorCount = async () => {

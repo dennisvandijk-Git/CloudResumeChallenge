@@ -55,7 +55,8 @@ a,
 .resume-footer img,
 .blog-footer img,
 .certificaten img,
-.rerturn-arrow {
+.rerturn-arrow,
+#myBtn {
   cursor: pointer;
 }
 
@@ -91,7 +92,7 @@ header {
   flex-direction: column;
 }
 
-header h2 {
+header h1 {
   text-decoration: double;
   text-decoration-line: overline;
   text-decoration-thickness: 1px;
@@ -105,12 +106,13 @@ header h2 {
   z-index: 2;
 }
 
-header p {
+header h3 {
   font-family: "IBM Plex Mono", sans-serif;
   font-family: "IBM Plex Mono Light", sans-serif;
   font-family: "IBM Plex Mono Thin", sans-serif;
   font-family: "IBM Plex Mono ExtraLight", sans-serif;
   font-style: italic;
+  font-weight: normal;
   display: flex;
   color: white;
   font-size: 1.25em;
@@ -173,13 +175,6 @@ main h2 {
 .main-container {
   display: flex;
 }
-
-/* .left-side,
-.right-side {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 
 .left-side {
   flex-basis: 32%;
@@ -267,25 +262,37 @@ footer {
   transform: translateY(0);
 }
 
-.back-to-top {
+#myBtn {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 50%;
   bottom: 30px;
   right: 30px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #5b9471;
+  background-color: #79b791;
   z-index: 10;
   border: 1px white dashed;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.back-to-top a {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* align to top */
-  padding-top: 2px; /* shift down a little */
+  color: white;
   font-size: 1.7rem;
-  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#myBtn:hover {
+  background-color: #9179b7;
+}
+
+.blog #myBtn {
+  background-color: #9179b7;
+}
+
+.blog #myBtn:hover {
+  background-color: #79b791;
 }
 
 /* BLOG STYLING */
@@ -309,7 +316,7 @@ footer {
 .blog-header {
   height: 10em;
   background-image: linear-gradient(to top right, #907eaf, #9179b7);
-  background-image: linear-gradient(to top right, #907eaf, #7f5cb9);
+  background-image: linear-gradient(to top right, #9179b7, #7f5cb9);
 }
 
 .blog-header h1 {
@@ -342,7 +349,7 @@ footer {
   height: auto;
 }
 
-.blog-main h2 {
+.blog-main h1 {
   text-decoration-style: double;
   text-decoration-style: wavy;
   text-decoration-style: solid;
