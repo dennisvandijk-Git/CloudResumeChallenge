@@ -267,6 +267,27 @@ footer {
   transform: translateY(0);
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #5b9471;
+  z-index: 10;
+  border: 1px white dashed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.back-to-top a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align to top */
+  padding-top: 2px; /* shift down a little */
+  font-size: 1.7rem;
+  color: #fff;
+}
+
 /* BLOG STYLING */
 
 /* BLOG CONTAINER */
