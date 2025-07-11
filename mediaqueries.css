@@ -102,6 +102,9 @@
     color: rgb(85, 85, 85);
   }
 }
+.back-to-top a {
+  color: white;
+}
 
 /* @media (max-width: 620px) {
   header h2 {
