@@ -16,9 +16,11 @@ function scroffFunction() {
 }
 
 function topFunction() {
+  mybutton.classList.add("active");
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
   mybutton.blur();
+  mybutton.classList.remove("active");
 }
 
 // Visitor Counter
