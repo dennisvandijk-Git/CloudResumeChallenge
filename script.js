@@ -16,11 +16,17 @@ function scroffFunction() {
 }
 
 function topFunction() {
-  mybutton.classList.add("active");
+  // mybutton.classList.add("active");
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  mybutton.blur();
-  mybutton.classList.remove("active");
+
+  if (document.body.classList.contains("index")) {
+    mybutton.style.backgroundColor = "#79b791";
+  } else {
+    mybutton.style.backgroundColor = "#9179b7";
+  }
+  // mybutton.blur();
+  // mybutton.classList.remove("active");
 }
 
 // Visitor Counter
