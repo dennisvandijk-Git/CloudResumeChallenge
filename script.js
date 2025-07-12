@@ -19,10 +19,14 @@ function scroffFunction() {
 }
 
 function topFunction() {
+  // Add the "active" class for the pressed look
   mybutton.classList.add("active");
+
+  // Scroll to top
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 
+  // Wait for scroll to finish
   const checkInterval = setInterval(() => {
     if (
       document.body.scrollTop === 0 &&
@@ -30,28 +34,56 @@ function topFunction() {
     ) {
       clearInterval(checkInterval);
 
-      // if (document.body.classList.contains("index")) {
-      //   mybutton.style.backgroundColor = "#79b791";
-      // } else {
-      //   mybutton.style.backgroundColor = "#9179b7";
-      // }
+      // Remove "active" to go back to normal state
+      mybutton.classList.remove("active");
 
-      // Add a "reset" class instead of direct style
+      // Optionally force backgroundColor to the page-specific color
       if (document.body.classList.contains("index")) {
-        mybutton.classList.remove("active");
+        mybutton.style.backgroundColor = "#79b791";
       } else {
-        mybutton.classList.add("active");
+        mybutton.style.backgroundColor = "#9179b7";
       }
-      setTimeout(() => {
-        // mybutton.classList.remove("active");
-        // mybutton.style.backgroundColor = "";
-        mybutton.blur();
-      }, 100);
+
+      // Remove focus
+      mybutton.blur();
     }
-    // mybutton.blur();
-    // mybutton.classList.remove("active");
-  }, 100);
+  }, 50);
 }
+
+// function topFunction() {
+//   mybutton.classList.add("active");
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+
+//   const checkInterval = setInterval(() => {
+//     if (
+//       document.body.scrollTop === 0 &&
+//       document.documentElement.scrollTop === 0
+//     ) {
+//       clearInterval(checkInterval);
+
+//       // if (document.body.classList.contains("index")) {
+//       //   mybutton.style.backgroundColor = "#79b791";
+//       // } else {
+//       //   mybutton.style.backgroundColor = "#9179b7";
+//       // }
+
+//       // Add a "reset" class instead of direct style
+//       if (document.body.classList.contains("index")) {
+//         mybutton.classList.remove("active");
+//       } else {
+//         mybutton.classList.add("active");
+//       }
+//       setTimeout(() => {
+//         // mybutton.classList.remove("active");
+//         // mybutton.style.backgroundColor = "";
+//         mybutton.blur();
+//       }, 100);
+//     }
+//     // mybutton.blur();
+//     // mybutton.classList.remove("active");
+//   }, 100);
+// }
 console.log(document.activeElement === mybutton);
 
 // Visitor Counter
