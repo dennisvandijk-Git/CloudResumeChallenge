@@ -266,7 +266,7 @@ footer {
   position: fixed;
   display: flex;
   justify-content: center;
-  width: 50%;
+  align-items: center;
   bottom: 30px;
   right: 30px;
   height: 40px;
@@ -281,6 +281,7 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
+  padding-bottom: 7.5px;
 }
 
 #myBtn:hover {
