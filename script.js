@@ -9,9 +9,11 @@ function scroffFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.opacity = "1";
     mybutton.style.pointerEvents = "auto";
+    mybutton.style.backgroundColor = "";
   } else {
     mybutton.style.opacity = "0";
     mybutton.style.pointerEvents = "none";
+    mybutton.style.display = "none";
   }
 }
 
