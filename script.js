@@ -18,6 +18,7 @@ function scroffFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  mybutton.blur();
 }
 
 // Visitor Counter
