@@ -9,14 +9,17 @@ function scroffFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.opacity = "1";
     mybutton.style.pointerEvents = "auto";
+    mybutton.style.display = "flex";
+    // mybutton.classList.remove("active");
   } else {
     mybutton.style.opacity = "0";
     mybutton.style.pointerEvents = "none";
+    mybutton.style.display = "none";
   }
 }
 
 function topFunction() {
-  // mybutton.classList.add("active");
+  mybutton.classList.add("active");
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 
@@ -33,7 +36,8 @@ function topFunction() {
         mybutton.style.backgroundColor = "#9179b7";
       }
       setTimeout(() => {
-        mybutton.style.backgroundColor = "";
+        mybutton.classList.remove("active");
+        // mybutton.style.backgroundColor = "";
         mybutton.blur();
       }, 100);
     }

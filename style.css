@@ -284,24 +284,23 @@ footer {
   padding-bottom: 7.5px;
 }
 
-#myBtn:hover {
+/* #myBtn:hover {
   background-color: #9179b7;
 }
+.blog #myBtn:hover {
+  background-color: #79b791;
+} */
 
 .blog #myBtn {
   background-color: #9179b7;
 }
 
-.blog #myBtn:hover {
-  background-color: #79b791;
-}
-
-/* #myBtn.active {
+#myBtn.active {
   background-color: #9179b7;
 }
 .blog #myBtn.active {
   background-color: #79b791;
-} */
+}
 
 /* BLOG STYLING */
 

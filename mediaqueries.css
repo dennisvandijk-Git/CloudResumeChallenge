@@ -1,13 +1,13 @@
 /* MEDIA QUERY FOR RESPONSIVENESS */
 
-/* @media (hover: hover) {
+@media (hover: hover) {
   #myBtn:hover {
     background-color: #9179b7;
   }
   .blog #myBtn:hover {
     background-color: #79b791;
   }
-} */
+}
 
 @media (max-width: 768px) {
   header {
