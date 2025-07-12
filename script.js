@@ -30,13 +30,20 @@ function topFunction() {
     ) {
       clearInterval(checkInterval);
 
+      // if (document.body.classList.contains("index")) {
+      //   mybutton.style.backgroundColor = "#79b791";
+      // } else {
+      //   mybutton.style.backgroundColor = "#9179b7";
+      // }
+
+      // Add a "reset" class instead of direct style
       if (document.body.classList.contains("index")) {
-        mybutton.style.backgroundColor = "#79b791";
+        mybutton.classList.remove("active");
       } else {
-        mybutton.style.backgroundColor = "#9179b7";
+        mybutton.classList.add("active");
       }
       setTimeout(() => {
-        mybutton.classList.remove("active");
+        // mybutton.classList.remove("active");
         // mybutton.style.backgroundColor = "";
         mybutton.blur();
       }, 100);
