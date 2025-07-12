@@ -34,12 +34,14 @@ function topFunction() {
       }
       setTimeout(() => {
         mybutton.style.backgroundColor = "";
+        mybutton.blur();
       }, 100);
     }
     // mybutton.blur();
     // mybutton.classList.remove("active");
   }, 100);
 }
+console.log(document.activeElement === mybutton);
 
 // Visitor Counter
 const visitsCount = document.getElementById("visits-count");
