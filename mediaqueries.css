@@ -1,7 +1,7 @@
 /* MEDIA QUERY FOR RESPONSIVENESS */
 
 @media (hover: hover) {
-  #myBtn:hover {
+  .index #myBtn:hover {
     background-color: #9179b7;
   }
   .blog #myBtn:hover {
@@ -14,16 +14,6 @@
     padding: 0;
     text-align: center;
   }
-
-  /* header h2 {
-    font-size: 3rem;
-    letter-spacing: normal;
-  } */
-
-  /* header p {
-    font-size: 1.2rem;
-    letter-spacing: 0.05rem;
-  } */
 
   h2 {
     font-size: 1.2em;
@@ -115,25 +105,10 @@
   color: white;
 }
 
-/* @media (max-width: 620px) {
-  header h2 {
-    font-size: 3rem;
-  }
-  header p {
-    font-size: 1.2rem;
-  }
-} */
-
 @media (max-width: 550px) {
   header {
     height: 14em;
   }
-  /* header h2 {
-    font-size: 2.7rem;
-  }
-  header p {
-    font-size: 1.1rem;
-  } */
   .blog-header h1 {
     letter-spacing: 0.4rem;
   }
@@ -141,15 +116,9 @@
 
 @media (max-width: 480px) {
   header {
-    /* height: 13em; */
     height: 10em;
   }
-  /* header h2 {
-    font-size: 2.3rem;
-  }
-  header p {
-    font-size: 0.9rem;
-  } */
+
   .blog-header h1 {
     letter-spacing: 0.3rem;
   }
@@ -162,24 +131,11 @@
   header {
     height: 12em;
   }
-  /* header h2 {
-    font-size: 1.95rem;
-  } */
+
   header p {
-    /* font-size: 0.8rem; */
     letter-spacing: normal;
   }
   .blog-header h1 {
     letter-spacing: 0.2rem;
   }
-}
-
-@media (max-width: 350px) {
-  /* header h2 {
-    font-size: 1.75rem;
-    border-top: white 2px solid;
-  }
-  header p {
-    font-size: 0.7rem;
-  } */
 }

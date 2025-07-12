@@ -272,7 +272,6 @@ footer {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #79b791;
   z-index: 10;
   border: 1px white dashed;
   color: white;
@@ -284,30 +283,12 @@ footer {
   padding-bottom: 7.5px;
 }
 
-/* Normal button color per page */
 body.index #myBtn {
   background-color: #79b791;
 }
 body.blog #myBtn {
   background-color: #9179b7;
 }
-#myBtn.active {
-  background-color: #9179b7;
-}
-.blog #myBtn.active {
-  background-color: #79b791;
-}
-
-/* #myBtn:hover {
-  background-color: #9179b7;
-}
-.blog #myBtn:hover {
-  background-color: #79b791;
-} */
-
-/* .blog #myBtn {
-  background-color: #9179b7;
-} */
 
 /* BLOG STYLING */
 
