@@ -10,10 +10,8 @@ function scroffFunction() {
     mybutton.style.opacity = "1";
     mybutton.style.pointerEvents = "auto";
   } else {
-    mybutton.style.backgroundColor = "";
     mybutton.style.opacity = "0";
     mybutton.style.pointerEvents = "none";
-    // mybutton.style.display = "none";
   }
 }
 
@@ -34,6 +32,9 @@ function topFunction() {
       } else {
         mybutton.style.backgroundColor = "#9179b7";
       }
+      setTimeout(() => {
+        mybutton.style.backgroundColor = "";
+      }, 100);
     }
     // mybutton.blur();
     // mybutton.classList.remove("active");
