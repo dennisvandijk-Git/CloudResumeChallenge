@@ -20,13 +20,22 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 
-  if (document.body.classList.contains("index")) {
-    mybutton.style.backgroundColor = "#79b791";
-  } else {
-    mybutton.style.backgroundColor = "#9179b7";
-  }
-  // mybutton.blur();
-  // mybutton.classList.remove("active");
+  const checkInterval = setInterval(() => {
+    if (
+      document.body.scrollTop === 0 &&
+      document.documentElement.scrollTop === 0
+    ) {
+      clearInterval(checkInterval);
+
+      if (document.body.classList.contains("index")) {
+        mybutton.style.backgroundColor = "#79b791";
+      } else {
+        mybutton.style.backgroundColor = "#9179b7";
+      }
+    }
+    // mybutton.blur();
+    // mybutton.classList.remove("active");
+  }, 100);
 }
 
 // Visitor Counter
