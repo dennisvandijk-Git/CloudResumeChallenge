@@ -281,6 +281,7 @@ footer {
   pointer-events: none;
   transition: opacity 0.5s ease;
   padding-bottom: 7.5px;
+  font-family: sans-serif;
 }
 
 body.index #myBtn {
