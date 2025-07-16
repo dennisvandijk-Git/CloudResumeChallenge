@@ -280,13 +280,22 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
-  font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  /* font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif; */
   /* padding-bottom: 7.5px; */
 }
 
-#myBtn .arrow {
+/* #myBtn .arrow {
   display: inline-block;
   transform: translateY(-2px);
+  color: white;
+} */
+
+#myBtn svg {
+  width: 20px;
+  width: auto;
+  height: auto;
+  height: 20px;
+  display: block;
 }
 
 body.index #myBtn {
