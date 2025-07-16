@@ -276,11 +276,11 @@ footer {
   border: 1px white dashed;
   color: white;
   font-size: 1.7rem;
+  font-size: 2.3rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
-  padding-bottom: 7.5px;
-  font-family: sans-serif;
+  /* padding-bottom: 7.5px; */
 }
 
 body.index #myBtn {
